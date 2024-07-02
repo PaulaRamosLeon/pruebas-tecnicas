@@ -25,86 +25,19 @@ const roca_div = document.getElementById("roca_div");
 const state_div = document.getElementById("state_div");
 
 
-// añadir EventListener a los divs
-zpump_div.addEventListener('mouseover', function() {
-    zpump.classList.add('visible');
-});
+function addHandlers(div, img){
+    div.addEventListener('mouseover', () => img.classList.add('visible'));
 
-zpump_div.addEventListener('mouseout', function() {
-    zpump.classList.remove('visible');
-});
+    div.addEventListener('mouseout', () => img.classList.remove('visible'));
+}
 
-// ------------------------------ //
-fontvella_div.addEventListener('mouseover', function() {
-    fontvella.classList.add('visible');
-});
-
-fontvella_div.addEventListener('mouseout', function() {
-    fontvella.classList.remove('visible');
-});
-// ------------------------------ //
-rcar_div.addEventListener('mouseover', function() {
-    rcar.classList.add('visible');
-});
-
-rcar_div.addEventListener('mouseout', function() {
-    rcar.classList.remove('visible');
-});
-// ------------------------------ //
-pulse_div.addEventListener('mouseover', function() {
-    pulse.classList.add('visible');
-});
-
-pulse_div.addEventListener('mouseout', function() {
-    pulse.classList.remove('visible');
-});
-// ------------------------------ //
-alhambra_div.addEventListener('mouseover', function() {
-    alhambra.classList.add('visible');
-});
-
-alhambra_div.addEventListener('mouseout', function() {
-    alhambra.classList.remove('visible');
-});
-
-// ------------------------------ //
-actimel_div.addEventListener('mouseover', function() {
-    actimel.classList.add('visible');
-});
-
-actimel_div.addEventListener('mouseout', function() {
-    actimel.classList.remove('visible');
-});
-// ------------------------------ //
-ots_div.addEventListener('mouseover', function() {
-    ots.classList.add('visible');
-});
-
-ots_div.addEventListener('mouseout', function() {
-    ots.classList.remove('visible');
-});
-// ------------------------------ //
-delicious_div.addEventListener('mouseover', function() {
-    delicious.classList.add('visible');
-});
-
-delicious_div.addEventListener('mouseout', function() {
-    delicious.classList.remove('visible');
-});
-
-// ------------------------------ //
-roca_div.addEventListener('mouseover', function() {
-    roca.classList.add('visible');
-});
-
-roca_div.addEventListener('mouseout', function() {
-    roca.classList.remove('visible');
-});
-// ------------------------------ //
-state_div.addEventListener('mouseover', function() {
-    state.classList.add('visible');
-});
-
-state_div.addEventListener('mouseout', function() {
-    state.classList.remove('visible');
-});
+addHandlers(zpump_div, zpump);
+addHandlers(fontvella_div, fontvella);
+addHandlers(rcar_div, rcar);
+addHandlers(pulse_div, pulse);
+addHandlers(alhambra_div, alhambra);
+addHandlers(actimel_div, actimel);
+addHandlers(ots_div, ots);
+addHandlers(delicious_div, delicious);
+addHandlers(roca_div, roca);
+addHandlers(state_div, state);
