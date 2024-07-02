@@ -1,10 +1,55 @@
 * {
     padding: 0px;
-    border: 0px;
+    margin: 0px;
     box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
 }
-
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
 
 .contenedor {
     background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 12%;
+    min-height: 100vh;
+    
+}
+.caja {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: baseline;
+    box-sizing: content-box;
+}
+.texto, .parrafo {
+    color: white;
+    z-index: 10;
+}
+
+.texto {
+    font-size: 4em;
+}
+
+.parrafo {
+    
+    margin-right: 1.5em;
+    margin-left: 0.5em;
+}
+
+.imagen {
+    position: absolute;
+    opacity: 0%;
+    transition: opacity 1s ease-in;
+    width: 100%;
+}
+
+.visible {
+    opacity: 100%;
+    position: absolute;
+    z-index: 0;
 }
