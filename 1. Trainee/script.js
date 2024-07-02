@@ -13,16 +13,18 @@ const roca = document.getElementById("roca");
 const state = document.getElementById("state");
 
     //Divs
-const zpump_div = document.getElementById("zpump_div");
-const fontvella_div = document.getElementById("fontvella_div");
-const rcar_div = document.getElementById("rcar_div");
-const pulse_div = document.getElementById("pulse_div");
-const alhambra_div = document.getElementById("alhambra_div");
-const actimel_div = document.getElementById("actimel_div");
-const ots_div = document.getElementById("ots_div");
-const delicious_div = document.getElementById("delicious_div");
-const roca_div = document.getElementById("roca_div");
-const state_div = document.getElementById("state_div");
+const container = document.querySelector(".contenedor");
+
+const zpump_div = container.querySelector("#zpump_div");
+const fontvella_div = container.querySelector("#fontvella_div");
+const rcar_div = container.querySelector("#rcar_div");
+const pulse_div = container.querySelector("#pulse_div");
+const alhambra_div = container.querySelector("#alhambra_div");
+const actimel_div = container.querySelector("#actimel_div");
+const ots_div = container.querySelector("#ots_div");
+const delicious_div = container.querySelector("#delicious_div");
+const roca_div = container.querySelector("#roca_div");
+const state_div = container.querySelector("#state_div");
 
 
 function addHandlers(div, img){
